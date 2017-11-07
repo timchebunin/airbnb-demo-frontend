@@ -3,6 +3,11 @@
   display: flex;
   flex-flow: row wrap;
 }
+.container {
+  box-sizing: border-box;
+  flex-basis: 1024px;
+  margin: auto;
+}
 
 .col-1,
 .col-2,
@@ -29,11 +34,8 @@
 .col-offset-11,
 .col-offset-12 {
   box-sizing: border-box;
-  display: flex;
-  flex-flow: row wrap;
   padding-left: 8px;
   padding-right: 8px;
-  background-color: rgb(253, 169, 169);
 }
 
 .col-1 {
