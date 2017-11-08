@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import "./grid.css";
+/*import "./grid.css";*/
+import "flexboxgrid2";
+import "flexboxgrid2/flexboxgrid2.css";
 
 import homes from "./user_img/homes.png";
 import experiences from "./user_img/experiences.png";
@@ -76,19 +78,19 @@ export default function() {
       <div className="container">
         <SectionTitle>Explore Airbnb</SectionTitle>
         <div className="row">
-          <div className="col-4">
+          <div className="col-xl-4 col-lg-4">
             <ExploreCard>
               <ExploreImg src={homes} />
               <p>Homes</p>
             </ExploreCard>
           </div>
-          <div className="col-4">
+          <div className="col-xl-4 col-lg-4">
             <ExploreCard>
               <ExploreImg src={experiences} />
               <p>Experiences</p>
             </ExploreCard>
           </div>
-          <div className="col-4">
+          <div className="col-xl-4 col-lg-4">
             <ExploreCard>
               <ExploreImg src={restaurants} />
               <p>Restaurants</p>

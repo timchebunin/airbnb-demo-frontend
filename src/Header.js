@@ -2,7 +2,9 @@ import React from "react";
 import logo from "./logo.svg";
 import search_icon from "./search_icon.svg";
 import styled from "styled-components";
-import "./grid.css";
+/*import "./grid.css";*/
+import "flexboxgrid2";
+import "flexboxgrid2/flexboxgrid2.css";
 
 const Header = styled.header`
   box-sizing: border-box;
@@ -65,16 +67,16 @@ export default function() {
     <Header>
       <div className="container">
         <div className="row">
-          <div className="col-1">
+          <div className="col-xl-1 col-lg-1">
             <AppLogo src={logo} />
           </div>
-          <div className="col-5">
+          <div className="col-lx-5 col-lg-5">
             <SearchBar>
               <SearchIcon src={search_icon} />
               <p>Try “Miami”</p>
             </SearchBar>
           </div>
-          <div className="col-4 col-offset-2">
+          <div className="col-xl-4 col-xl-offset-2 col-lg-4 col-lg-offset-2">
             <Nav>
               <p>Become a host</p>
               <p>Help</p>
