@@ -4,25 +4,12 @@ import styled from "styled-components";
 import "flexboxgrid2";
 import "flexboxgrid2/flexboxgrid2.css";
 
+import { Section, SectionTitle } from "./SharedStyledComponents.js";
+
 import homes from "./user_img/homes.png";
 import experiences from "./user_img/experiences.png";
 import restaurants from "./user_img/restaurants.png";
 
-const Section = styled.section`
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-
-  margin-top: 48px;
-`;
-const SectionTitle = styled.h2`
-  line-height: 34px;
-  font-size: 32px;
-  margin-bottom: 24px;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 8px;
-`;
 const ExploreCard = styled.div`
   background: #ffffff;
   border: 1px solid rgba(72, 72, 72, 0.2);
@@ -39,32 +26,6 @@ const ExploreCard = styled.div`
   flex-flow: row wrap;
   box-sizing: border-box;
   align-items: center;
-  /*
-  .explore-row {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .explore-col-1,
-  .explore-col-2,
-  .explore-col-3 {
-    box-sizing: border-box;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-  .explore-col-1 {
-    flex-basis: 33.333333333%;
-    max-width: 33.333333333%;
-  }
-  .explore-col-2 {
-    flex-basis: 66.666666667%;
-    max-width: 66.666666667%;
-  }
-  .explore-col-3 {
-    flex-basis: 100%;
-    max-width: 100%;
-  }*/
 `;
 
 const ExploreImg = styled.img`
@@ -76,8 +37,10 @@ export default function() {
   return (
     <Section>
       <div className="container">
-        <SectionTitle>Explore Airbnb</SectionTitle>
         <div className="row">
+          <div className="col-xl-12 col-lg-12">
+            <SectionTitle>Explore Airbnb</SectionTitle>
+          </div>
           <div className="col-xl-4 col-lg-4">
             <ExploreCard>
               <ExploreImg src={homes} />
