@@ -8,13 +8,22 @@ const Section = styled.section`
 
   margin-top: 48px;
 `;
+const SectionHeader = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 const SectionTitle = styled.h2`
+  align-self: flex-start;
+
   line-height: 34px;
   font-size: 32px;
   margin-bottom: 24px;
   font-weight: bold;
   text-align: left;
 `;
+
 /* Section styles*/
 
-export { SectionTitle, Section };
+export { SectionTitle, Section, SectionHeader };

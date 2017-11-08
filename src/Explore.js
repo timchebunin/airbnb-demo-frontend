@@ -4,7 +4,11 @@ import styled from "styled-components";
 import "flexboxgrid2";
 import "flexboxgrid2/flexboxgrid2.css";
 
-import { Section, SectionTitle } from "./SharedStyledComponents.js";
+import {
+  Section,
+  SectionTitle,
+  SectionHeader
+} from "./SharedStyledComponents.js";
 
 import homes from "./user_img/homes.png";
 import experiences from "./user_img/experiences.png";
@@ -39,7 +43,9 @@ export default function() {
       <div className="container">
         <div className="row">
           <div className="col-xl-12 col-lg-12">
-            <SectionTitle>Explore Airbnb</SectionTitle>
+            <SectionHeader>
+              <SectionTitle>Explore Airbnb</SectionTitle>
+            </SectionHeader>
           </div>
           <div className="col-xl-4 col-lg-4">
             <ExploreCard>
