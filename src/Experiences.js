@@ -4,12 +4,16 @@ import styled from "styled-components";
 import "flexboxgrid2";
 import "flexboxgrid2/flexboxgrid2.css";
 
+import arrowIcon from "./arrow_icon.svg";
 import experiencesImg1 from "./user_img/experiencesImg1.png";
 
 import {
   Section,
   SectionTitle,
-  SectionHeader
+  SectionHeader,
+  SectionHeaderArrowImg,
+  SectionHeaderArrowText,
+  SectionHeaderArrow
 } from "./SharedStyledComponents.js";
 
 const ImgAndStarsContainer = styled.div`
@@ -22,7 +26,7 @@ const ImgAndStarsContainer = styled.div`
 
 const ImgAndStarsImage = styled.img`
   order: -1;
-  flex-basis: 100%;
+  max-height: 350px;
 `;
 
 export default function() {
@@ -33,7 +37,10 @@ export default function() {
           <div className="col-xl-12 col-lg-12">
             <SectionHeader>
               <SectionTitle>Experiences</SectionTitle>
-              <p>arrow</p>
+              <SectionHeaderArrow>
+                <SectionHeaderArrowText>See all</SectionHeaderArrowText>
+                <SectionHeaderArrowImg src={arrowIcon} />
+              </SectionHeaderArrow>
             </SectionHeader>
           </div>
           <div className="col-xl-3 col-lg-3">

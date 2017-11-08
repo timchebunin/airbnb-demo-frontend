@@ -18,13 +18,33 @@ const SectionHeader = styled.div`
 const SectionTitle = styled.h2`
   align-self: flex-start;
 
-  line-height: 34px;
-  font-size: 32px;
+  line-height: 1.0625;
+  font-size: 2rem;
   margin-bottom: 24px;
   font-weight: bold;
   text-align: left;
 `;
+const SectionHeaderArrow = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+`;
+const SectionHeaderArrowText = styled.p`
+  font-size: 0.875rem;
+  line-height: 1.714285714;
+  text-align: Right;
+  color: #383838;
+
+  margin-right: 8px;
+`;
+const SectionHeaderArrowImg = styled.img`margin-right: 8px;`;
 
 /* Section styles*/
 
-export { SectionTitle, Section, SectionHeader };
+export {
+  SectionTitle,
+  Section,
+  SectionHeader,
+  SectionHeaderArrowText,
+  SectionHeaderArrowImg,
+  SectionHeaderArrow
+};
