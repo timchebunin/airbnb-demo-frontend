@@ -12,6 +12,7 @@ const SectionHeader = styled.div`
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  flex-flow: row nowrap;
   justify-content: space-between;
 `;
 const SectionTitle = styled.h2`
