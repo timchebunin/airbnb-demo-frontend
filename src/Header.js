@@ -67,7 +67,7 @@ export default function() {
     <Header>
       <div className="container">
         <div className="row">
-          <div className="col-xl-1 col-lg-1">
+          <div className="col-lx-1 col-lg-1">
             <AppLogo src={logo} />
           </div>
           <div className="col-lx-5 col-lg-5">

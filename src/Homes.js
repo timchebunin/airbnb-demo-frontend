@@ -5,10 +5,9 @@ import "flexboxgrid2";
 import "flexboxgrid2/flexboxgrid2.css";
 
 import arrowIcon from "./arrow_icon.svg";
-import experiencesImg1 from "./user_img/experiencesImg1.png";
-import experiencesImg2 from "./user_img/experiencesImg2.png";
-import experiencesImg3 from "./user_img/experiencesImg3.png";
-import experiencesImg4 from "./user_img/experiencesImg4.png";
+import homesImg1 from "./user_img/homesImg1.png";
+import homesImg2 from "./user_img/homesImg2.png";
+import homesImg3 from "./user_img/homesImg3.png";
 import starIcon from "./starIcon.png";
 
 import {
@@ -38,7 +37,6 @@ const PriceTagRegular = styled.span`
   alig-self: flex-start;
   font-size: 0.9375rem;
   line-height: 1.2;
-
   font-weight: 100;
 `;
 
@@ -53,7 +51,7 @@ const ReviewsText = styled.span`
 `;
 const ColumnImg = styled.img`
   order: -1;
-  max-height: 350px;
+  max-height: 205px;
 `;
 
 export default function() {
@@ -63,19 +61,22 @@ export default function() {
         <div className="row">
           <div className="col-xl-12 col-lg-12">
             <SectionHeader>
-              <SectionTitle>Experiences</SectionTitle>
+              <SectionTitle>Homes</SectionTitle>
               <SectionHeaderArrow>
                 <SectionHeaderArrowText>See all</SectionHeaderArrowText>
                 <SectionHeaderArrowImg src={arrowIcon} />
               </SectionHeaderArrow>
             </SectionHeader>
           </div>
-          <div className="col-xl-3 col-lg-3">
+          <div className="col-xl-4 col-lg-4">
             <FlexContainer>
-              <ColumnImg src={experiencesImg1} />
+              <ColumnImg src={homesImg1} />
               <PriceTag>
-                <PriceTagBold>29$</PriceTagBold>
-                <PriceTagRegular>Forest therapy</PriceTagRegular>
+                <PriceTagBold>
+                  $82 La Salentina, see, nature & relax
+                  <br />
+                </PriceTagBold>
+                <PriceTagRegular>Entire house · 9 beds</PriceTagRegular>
               </PriceTag>
               <Reviews>
                 <ReviewsStars src={starIcon} />
@@ -83,16 +84,19 @@ export default function() {
                 <ReviewsStars src={starIcon} />
                 <ReviewsStars src={starIcon} />
                 <ReviewsStars src={starIcon} />
-                <ReviewsText>44 reviews</ReviewsText>
+                <ReviewsText>364 · Superhost</ReviewsText>
               </Reviews>
             </FlexContainer>
           </div>
-          <div className="col-xl-3 col-lg-3">
+          <div className="col-xl-4 col-lg-4">
             <FlexContainer>
-              <ColumnImg src={experiencesImg2} />
+              <ColumnImg src={homesImg2} />
               <PriceTag>
-                <PriceTagBold>69$</PriceTagBold>
-                <PriceTagRegular>Whale watching</PriceTagRegular>
+                <PriceTagBold>
+                  $82 Your private 3 bedr. riad and exclusi…
+                  <br />
+                </PriceTagBold>
+                <PriceTagRegular>Entire house · 5 beds</PriceTagRegular>
               </PriceTag>
               <Reviews>
                 <ReviewsStars src={starIcon} />
@@ -100,18 +104,19 @@ export default function() {
                 <ReviewsStars src={starIcon} />
                 <ReviewsStars src={starIcon} />
                 <ReviewsStars src={starIcon} />
-                <ReviewsText>46 reviews</ReviewsText>
+                <ReviewsText>161 · Superhost</ReviewsText>
               </Reviews>
             </FlexContainer>
           </div>
-          <div className="col-xl-3 col-lg-3">
+          <div className="col-xl-4 col-lg-4">
             <FlexContainer>
-              <ColumnImg src={experiencesImg3} />
+              <ColumnImg src={homesImg3} />
               <PriceTag>
-                <PriceTagBold>69$</PriceTagBold>
-                <PriceTagRegular>
-                  Table Mountain Summit, Cable Car Down
-                </PriceTagRegular>
+                <PriceTagBold>
+                  $200 Dreamy Tropical Tree House
+                  <br />
+                </PriceTagBold>
+                <PriceTagRegular>Entire treehouse · 1 bed</PriceTagRegular>
               </PriceTag>
               <Reviews>
                 <ReviewsStars src={starIcon} />
@@ -119,24 +124,7 @@ export default function() {
                 <ReviewsStars src={starIcon} />
                 <ReviewsStars src={starIcon} />
                 <ReviewsStars src={starIcon} />
-                <ReviewsText>44 reviews</ReviewsText>
-              </Reviews>
-            </FlexContainer>
-          </div>
-          <div className="col-xl-3 col-lg-3">
-            <FlexContainer>
-              <ColumnImg src={experiencesImg4} />
-              <PriceTag>
-                <PriceTagBold>50$</PriceTagBold>
-                <PriceTagRegular>Salsa Night</PriceTagRegular>
-              </PriceTag>
-              <Reviews>
-                <ReviewsStars src={starIcon} />
-                <ReviewsStars src={starIcon} />
-                <ReviewsStars src={starIcon} />
-                <ReviewsStars src={starIcon} />
-                <ReviewsStars src={starIcon} />
-                <ReviewsText>44 reviews</ReviewsText>
+                <ReviewsText>97 · Superhost</ReviewsText>
               </Reviews>
             </FlexContainer>
           </div>

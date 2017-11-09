@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./Header.js";
 import Explore from "./Explore.js";
 import Experiences from "./Experiences.js";
+import Homes from "./Homes.js";
 
 const Main = styled.main``;
 
@@ -16,6 +17,7 @@ class App extends Component {
         <Main>
           <Explore />
           <Experiences />
+          <Homes />
         </Main>
       </div>
     );
