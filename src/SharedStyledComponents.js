@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-/* Section styles*/
+/* Section haed styles*/
 const Section = styled.section`
   box-sizing: border-box;
   display: flex;
@@ -38,7 +38,44 @@ const SectionHeaderArrowText = styled.p`
 `;
 const SectionHeaderArrowImg = styled.img`margin-right: 8px;`;
 
-/* Section styles*/
+/* Section head styles*/
+
+/* Image and text in colum */
+const FlexContainer = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+`;
+
+const PriceTag = styled.div`margin-top: 8px;`;
+const PriceTagBold = styled.span`
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-right: 5px;
+`;
+const PriceTagRegular = styled.span`
+  alig-self: flex-start;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  font-weight: 100;
+`;
+
+const Reviews = styled.div``;
+const ReviewsStars = styled.img`
+  height: 12px;
+  margin-right: 4px;
+`;
+const ReviewsText = styled.span`
+  font-size: 0.75rem;
+  margin-left: 4px;
+`;
+const ColumnImg = styled.img`
+  order: -1;
+  width: 100%;
+`;
+/* Image and text in colum */
 
 export {
   SectionTitle,
@@ -46,5 +83,13 @@ export {
   SectionHeader,
   SectionHeaderArrowText,
   SectionHeaderArrowImg,
-  SectionHeaderArrow
+  SectionHeaderArrow,
+  FlexContainer,
+  PriceTag,
+  PriceTagBold,
+  PriceTagRegular,
+  Reviews,
+  ReviewsStars,
+  ReviewsText,
+  ColumnImg
 };

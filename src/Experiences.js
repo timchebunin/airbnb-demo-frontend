@@ -17,44 +17,16 @@ import {
   SectionHeader,
   SectionHeaderArrowImg,
   SectionHeaderArrowText,
-  SectionHeaderArrow
+  SectionHeaderArrow,
+  FlexContainer,
+  PriceTag,
+  PriceTagBold,
+  PriceTagRegular,
+  Reviews,
+  ReviewsStars,
+  ReviewsText,
+  ColumnImg
 } from "./SharedStyledComponents.js";
-
-const FlexContainer = styled.div`
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-`;
-
-const PriceTag = styled.div`margin-top: 8px;`;
-const PriceTagBold = styled.span`
-  font-size: 0.9375rem;
-  line-height: 1.2;
-  font-weight: bold;
-  margin-right: 5px;
-`;
-const PriceTagRegular = styled.span`
-  alig-self: flex-start;
-  font-size: 0.9375rem;
-  line-height: 1.2;
-
-  font-weight: 100;
-`;
-
-const Reviews = styled.div``;
-const ReviewsStars = styled.img`
-  height: 12px;
-  margin-right: 4px;
-`;
-const ReviewsText = styled.span`
-  font-size: 0.75rem;
-  margin-left: 4px;
-`;
-const ColumnImg = styled.img`
-  order: -1;
-  max-height: 350px;
-`;
 
 export default function() {
   return (
