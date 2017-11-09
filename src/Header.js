@@ -51,7 +51,7 @@ const SearchBar = styled.div`
   height: 48px;
 `;
 
-const Nav = styled.div`
+const Nav = styled.nav`
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;

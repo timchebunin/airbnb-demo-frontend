@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import "./App.css";
 import Header from "./Header.js";
+import Footer from "./Footer.js";
 import Explore from "./Explore.js";
 import Experiences from "./Experiences.js";
 import Homes from "./Homes.js";
@@ -23,6 +24,7 @@ class App extends Component {
           <Popular />
           <Featured />
         </Main>
+        <Footer />
       </div>
     );
   }
