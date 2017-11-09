@@ -1,10 +1,14 @@
 import React from "react";
-import logo from "./logoBottom.svg";
-import DownIcon from "./dropdown.svg";
 import styled from "styled-components";
 /*import "./grid.css";*/
 import "flexboxgrid2";
 import "flexboxgrid2/flexboxgrid2.css";
+
+import logo from "./logoBottom.svg";
+import DownIcon from "./dropdown.svg";
+import facebookIcon from "./facebook.svg";
+import twitterIcon from "./twitter.svg";
+import instagramIcon from "./instagram.svg";
 
 import { PriceTagRegular, PriceTagBold } from "./SharedStyledComponents.js";
 
@@ -53,7 +57,6 @@ const Nav = styled.nav`
   box-sizing: border-box;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
   align-self: center;
 `;
 const BoldNav = PriceTagBold.extend`
@@ -65,22 +68,29 @@ const RegularNav = PriceTagRegular.extend`
   margin-bottom: 8px;
 `;
 
-const BottomFooter = styled.div`
+const BottomNavContainer = styled.nav`
   box-sizing: border-box;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-
-  margin-top: 48px;
-  padding-top: 32px;
-  padding-bottom: 35px;
-  border-top: 1px solid rgba(72, 72, 72, 0.2);
 `;
-const BottomLogoContainer = styled.div``;
+
+const BottomLogoContainer = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flow: row nowrap;
+  align-items: center;
+`;
 const BottomLogo = styled.img`
   height: 22px;
   margin-right: 13px;
+`;
+const SocialLogo = styled.img`height: 24px;`;
+const Divider = styled.hr`
+  margin-top: 48px;
+  margin-bottom: 32px;
+  float: center;
 `;
 
 export default function() {
@@ -136,12 +146,23 @@ export default function() {
             </Nav>
           </div>
           <div className="col-lx-12 col-lg-12">
-            <BottomFooter>
-              <BottomLogoContainer>
-                <BottomLogo src={logo} />
-                <RegularNav>© Airbnb Inc.</RegularNav>
-              </BottomLogoContainer>
-            </BottomFooter>
+            <Divider />
+          </div>
+          <div className="col-lx-3 col-lg-3">
+            <BottomLogoContainer>
+              <BottomLogo src={logo} />
+              <RegularNav>© Airbnb Inc.</RegularNav>
+            </BottomLogoContainer>
+          </div>
+          <div className="col-lx-4 col-lx-offset-5 col-lg-4 col-lg-offset-5">
+            <BottomNavContainer>
+              <RegularNav>Terms</RegularNav>
+              <RegularNav>Privacy</RegularNav>
+              <RegularNav>Site map</RegularNav>
+              <SocialLogo src={facebookIcon} />
+              <SocialLogo src={twitterIcon} />
+              <SocialLogo src={instagramIcon} />
+            </BottomNavContainer>
           </div>
         </div>
       </div>
