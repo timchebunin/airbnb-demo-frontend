@@ -7,6 +7,7 @@ import Explore from "./Explore.js";
 import Experiences from "./Experiences.js";
 import Homes from "./Homes.js";
 import Popular from "./Popular.js";
+import Featured from "./Featured.js";
 
 const Main = styled.main``;
 
@@ -20,6 +21,7 @@ class App extends Component {
           <Experiences />
           <Homes />
           <Popular />
+          <Featured />
         </Main>
       </div>
     );
