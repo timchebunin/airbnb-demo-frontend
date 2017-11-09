@@ -59,21 +59,34 @@ const Nav = styled.nav`
   flex-flow: column wrap;
   align-self: center;
 `;
-const BoldNav = PriceTagBold.extend`
+const BoldNav = styled.div`
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-right: 5px;
   margin-top: 0;
   margin-bottom: 16px;
 `;
-const RegularNav = PriceTagRegular.extend`
+const RegularNav = styled.div`
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  font-weight: 100;
   margin-top: 0;
   margin-bottom: 8px;
+`;
+
+const BottomText = styled.div`
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  font-weight: 100;
 `;
 
 const BottomNavContainer = styled.nav`
   box-sizing: border-box;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flow: row nowrap;
   align-items: center;
+  justify-content: space-between;
 `;
 
 const BottomLogoContainer = styled.div`
@@ -151,14 +164,14 @@ export default function() {
           <div className="col-lx-3 col-lg-3">
             <BottomLogoContainer>
               <BottomLogo src={logo} />
-              <RegularNav>© Airbnb Inc.</RegularNav>
+              <BottomText>© Airbnb Inc.</BottomText>
             </BottomLogoContainer>
           </div>
           <div className="col-lx-4 col-lx-offset-5 col-lg-4 col-lg-offset-5">
             <BottomNavContainer>
-              <RegularNav>Terms</RegularNav>
-              <RegularNav>Privacy</RegularNav>
-              <RegularNav>Site map</RegularNav>
+              <BottomText>Terms</BottomText>
+              <BottomText>Privacy</BottomText>
+              <BottomText>Site map</BottomText>
               <SocialLogo src={facebookIcon} />
               <SocialLogo src={twitterIcon} />
               <SocialLogo src={instagramIcon} />

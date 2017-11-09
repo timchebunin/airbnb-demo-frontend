@@ -10,6 +10,8 @@ import homesImg2 from "./user_img/homesImg2.png";
 import homesImg3 from "./user_img/homesImg3.png";
 import starIcon from "./starIcon.png";
 
+import nextPageIcon from "./next-page.png";
+
 import {
   Section,
   SectionTitle,
@@ -24,7 +26,9 @@ import {
   Reviews,
   ReviewsStars,
   ReviewsText,
-  ColumnImg
+  ColumnImg,
+  NextPage,
+  NextPageContainer
 } from "./SharedStyledComponents.js";
 
 export default function() {
@@ -82,8 +86,13 @@ export default function() {
             </FlexContainer>
           </div>
           <div className="col-xl-4 col-lg-4">
+            <NextPageContainer>
+              <NextPage src={nextPageIcon} />
+              <FlexContainer>
+                <ColumnImg src={homesImg3} />
+              </FlexContainer>
+            </NextPageContainer>
             <FlexContainer>
-              <ColumnImg src={homesImg3} />
               <PriceTag>
                 <PriceTagBold>
                   $200 Dreamy Tropical Tree House

@@ -10,6 +10,7 @@ import experiencesImg2 from "./user_img/experiencesImg2.png";
 import experiencesImg3 from "./user_img/experiencesImg3.png";
 import experiencesImg4 from "./user_img/experiencesImg4.png";
 import starIcon from "./starIcon.png";
+import nextPageIcon from "./next-page.png";
 
 import {
   Section,
@@ -25,7 +26,9 @@ import {
   Reviews,
   ReviewsStars,
   ReviewsText,
-  ColumnImg
+  ColumnImg,
+  NextPage,
+  NextPageContainer
 } from "./SharedStyledComponents.js";
 
 export default function() {
@@ -96,8 +99,13 @@ export default function() {
             </FlexContainer>
           </div>
           <div className="col-xl-3 col-lg-3">
+            <NextPageContainer>
+              <NextPage src={nextPageIcon} />
+              <FlexContainer>
+                <ColumnImg src={experiencesImg4} />
+              </FlexContainer>
+            </NextPageContainer>
             <FlexContainer>
-              <ColumnImg src={experiencesImg4} />
               <PriceTag>
                 <PriceTagBold>50$</PriceTagBold>
                 <PriceTagRegular>Salsa Night</PriceTagRegular>

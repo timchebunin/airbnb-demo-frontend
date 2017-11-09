@@ -11,6 +11,7 @@ import featuredImg3 from "./user_img/featuredImg3.png";
 import featuredImg4 from "./user_img/featuredImg4.png";
 import featuredImg5 from "./user_img/featuredImg5.png";
 import featuredImg6 from "./user_img/featuredImg6.png";
+import nextPageIcon from "./next-page.png";
 
 import {
   Section,
@@ -22,7 +23,9 @@ import {
   FlexContainer,
   PriceTag,
   PriceTagBold,
-  ColumnImg
+  ColumnImg,
+  NextPage,
+  NextPageContainer
 } from "./SharedStyledComponents.js";
 
 export default function() {
@@ -80,8 +83,13 @@ export default function() {
             </FlexContainer>
           </div>
           <div className="col-xl-2 col-lg-2">
+            <NextPageContainer>
+              <NextPage src={nextPageIcon} />
+              <FlexContainer>
+                <ColumnImg src={featuredImg6} />
+              </FlexContainer>
+            </NextPageContainer>
             <FlexContainer>
-              <ColumnImg src={featuredImg6} />
               <PriceTag>
                 <PriceTagBold>Los Angeles</PriceTagBold>
               </PriceTag>

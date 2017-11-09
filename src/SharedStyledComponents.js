@@ -77,6 +77,21 @@ const ColumnImg = styled.img`
 `;
 /* Image and text in colum */
 
+const NextPage = styled.img`
+  position: absolute;
+  top: 40%;
+  right: -20px;
+  z-index: 1;
+  height: 40px;
+`;
+const NextPageContainer = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  marting-left: 40px;
+`;
+
 export {
   SectionTitle,
   Section,
@@ -91,5 +106,7 @@ export {
   Reviews,
   ReviewsStars,
   ReviewsText,
-  ColumnImg
+  ColumnImg,
+  NextPage,
+  NextPageContainer
 };

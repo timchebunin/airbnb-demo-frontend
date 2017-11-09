@@ -9,6 +9,7 @@ import popularImg1 from "./user_img/popularImg1.png";
 import popularImg2 from "./user_img/popularImg2.png";
 import popularImg3 from "./user_img/popularImg3.png";
 import popularImg4 from "./user_img/popularImg4.png";
+import nextPageIcon from "./next-page.png";
 
 import {
   Section,
@@ -21,7 +22,9 @@ import {
   PriceTag,
   PriceTagBold,
   PriceTagRegular,
-  ColumnImg
+  ColumnImg,
+  NextPage,
+  NextPageContainer
 } from "./SharedStyledComponents.js";
 
 const TitleContainer = PriceTag.extend`
@@ -93,8 +96,13 @@ export default function() {
             </FlexContainer>
           </div>
           <div className="col-xl-3 col-lg-3">
+            <NextPageContainer>
+              <NextPage src={nextPageIcon} />
+              <FlexContainer>
+                <ColumnImg src={popularImg4} />
+              </FlexContainer>
+            </NextPageContainer>
             <FlexContainer>
-              <ColumnImg src={popularImg4} />
               <TitleContainer>
                 <SmallBolgText>Fine seafood</SmallBolgText>
                 <BolgText>Seaprice</BolgText>

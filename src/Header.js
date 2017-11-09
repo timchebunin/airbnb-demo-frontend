@@ -19,9 +19,15 @@ const Header = styled.header`
 `;
 const AppLogo = styled.img`
   box-sizing: border-box;
-  vertical-align: middle;
   width: 30px;
 `;
+const AppLogoContainer = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 48px;
+`;
+
 const SearchIcon = styled.img`
   box-sizing: border-box;
   width: 20px;
@@ -68,7 +74,9 @@ export default function() {
       <div className="container">
         <div className="row">
           <div className="col-lx-1 col-lg-1">
-            <AppLogo src={logo} />
+            <AppLogoContainer>
+              <AppLogo src={logo} />
+            </AppLogoContainer>
           </div>
           <div className="col-lx-5 col-lg-5">
             <SearchBar>
